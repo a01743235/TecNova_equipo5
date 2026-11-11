@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Equipo 05 | TecNova Sinaloa</title>
+  <link rel="icon" type="image/png" href="assets/images/logo_vertical.png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@500;700;900&family=Rajdhani:wght@500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="assets/css/styles.css">
+</head>
+<body>
+  <!-- Canvas de fondo para animación de estrellas y cohetes despegando -->
+  <canvas id="spaceCanvas"></canvas>
+
+  <header class="header">
+    <div class="container nav-container">
+      <div class="brand">
+        <img src="assets/images/logo_horizontal.png" alt="TecNova Sinaloa Logo" class="brand-logo">
+      </div>
+      <div class="team-tag">EQUIPO 05 • SINALOA</div>
+    </div>
+  </header>
+
+  <main>
+    <section class="hero">
+      <div class="container hero-content">
+        <div class="badge-tag">MISIÓN AEROESPACIAL & TECNOLÓGICA</div>
+        <h1 class="hero-title">EQUIPO 05 <span class="highlight-gold">TEC NOVA</span> SINALOA</h1>
+        <p class="hero-subtitle">
+          Innovación, ingeniería y determinación sinaloense conquistando nuevos límites.
+          Impulsando la ciencia y el desarrollo aeroespacial hacia el infinito.
+        </p>
+
+        <!-- Botón interactivo de despegue con síntesis de audio Web Audio API -->
+        <div class="launch-action">
+          <button id="launchBtn" class="btn-launch" aria-label="Iniciar secuencia de despegue">
+            <span class="btn-glow"></span>
+            <span class="btn-icon">🚀</span>
+            <span class="btn-text">INICIAR DESPEGUE</span>
+          </button>
+          <div id="countdownStatus" class="countdown-display">LISTO PARA LA IGNICIÓN • T-0</div>
+        </div>
+      </div>
+    </section>
+
+    <section class="features">
+      <div class="container">
+        <h2 class="section-title">PILORES DE <span class="highlight-gold">MISIÓN</span></h2>
+        <div class="cards-grid">
+          <div class="card">
+            <div class="card-icon">🛰️</div>
+            <h3>Ingeniería y Cohetería</h3>
+            <p>Diseño y construcción de sistemas aeroespaciales de alta precisión con telemetría satelital avanzada.</p>
+          </div>
+          <div class="card">
+            <div class="card-icon">⚡</div>
+            <h3>Innovación Sinaloense</h3>
+            <p>Talento local aplicando metodologías tecnológicas de vanguardia para resolver desafíos de alta exigencia.</p>
+          </div>
+          <div class="card">
+            <div class="card-icon">🎯</div>
+            <h3>Equipo 05 Competitivo</h3>
+            <p>Trabajo coordinado, control de calidad riguroso y visión de excelencia en cada fase del proyecto.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="identity">
+      <div class="container identity-container">
+        <div class="identity-text">
+          <h2 class="section-title">IDENTIDAD <span class="highlight-gold">VISUAL</span></h2>
+          <p>
+            Nuestra insignia representa la propulsión del cohete en ascenso, la órbita satelital y el escudo de protección
+            institucional bajo la paleta oficial: <strong>Azul Profundo (#0B2E5B)</strong>, <strong>Azul Tec (#1E5FA8)</strong> y <strong>Dorado (#D4AF37)</strong>.
+          </p>
+          <div class="color-palette">
+            <div class="color-chip" style="--chip-bg: #0B2E5B;">
+              <span>Azul Profundo</span>
+              <small>#0B2E5B</small>
+            </div>
+            <div class="color-chip" style="--chip-bg: #1E5FA8;">
+              <span>Azul Tec</span>
+              <small>#1E5FA8</small>
+            </div>
+            <div class="color-chip" style="--chip-bg: #D4AF37; color: #0B2E5B;">
+              <span>Dorado</span>
+              <small>#D4AF37</small>
+            </div>
+            <div class="color-chip" style="--chip-bg: #F4F6F8; color: #0B2E5B;">
+              <span>Gris Claro</span>
+              <small>#F4F6F8</small>
+            </div>
+          </div>
+        </div>
+        <div class="identity-media">
+          <img src="assets/images/logo_vertical.png" alt="Insignia TecNova" class="shield-logo">
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="container footer-content">
+      <p>© 2026 <strong>TecNova Sinaloa • Equipo 05</strong>. Todos los derechos reservados.</p>
+      <p class="footer-sub">Desarrollado para GitHub Pages</p>
+    </div>
+  </footer>
+
+  <script src="assets/js/rocket-audio.js"></script>
+  <script src="assets/js/space-animation.js"></script>
+</body>
+</html>
